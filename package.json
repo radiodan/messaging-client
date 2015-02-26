@@ -1,13 +1,17 @@
 {
-  "name": "0mqclient",
+  "name": "radiodan-messaging-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Companion messaging client for the radiodan broker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radiodan/messaging-client.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dan Nuttall <pixelblend@gmail.com>",
+  "license": "Apache-2",
   "dependencies": {
     "q": "^1.2.0",
     "uuid": "^2.0.1",
