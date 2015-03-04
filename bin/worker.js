@@ -8,4 +8,9 @@ worker.addService([
   {serviceType: 'player', serviceInstances: ['main']},
   {serviceType: 'button', serviceInstances: ['power', 'nextstation']}
 ]);
+
 worker.ready();
+
+worker.events.on('request', function(req) {
+  worker.respond(req.sender, req.correlationId, {error: false});
+});
