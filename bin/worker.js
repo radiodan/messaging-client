@@ -17,6 +17,6 @@ worker.events.on('request', function(req) {
 
 worker.events.on('disconnect', function(msg) {
   // we could reconnect with ready, or:
-  console.log("Err: ", msg);
-  process.exit();
+  // process.exit();
+  worker.ready();
 });
