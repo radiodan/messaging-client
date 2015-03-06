@@ -18,14 +18,15 @@ function sendCommand(count) {
             console.log('->', count, 'yes!', response)
           }
         },
-        function(err, response) {
+        function(err) {
           if(verbose) {
-            console.log('->', count, 'no!', err, response)
+            console.log('->', count, 'no!', err.status, err.msg)
           }
         }
-        );
+    );
 
   promises.push(p);
+
   if(promises.length == loop) {
     function timeEnd() {
       console.timeEnd(loop);
@@ -46,4 +47,4 @@ function exec() {
 }
 
 console.time(loop);
-exec()
+exec();
