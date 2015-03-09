@@ -46,5 +46,7 @@ function exec() {
   }
 }
 
-console.time(loop);
-exec();
+client.waitForService('player', 'avoid').then(function() {
+  console.time(loop);
+  exec();
+}, process.exit);
