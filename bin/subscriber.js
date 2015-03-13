@@ -7,7 +7,7 @@ var Subscriber = require('../lib/messaging-client').Subscriber,
     Q = require('q'),
     promises = [];
 
-sub.subscribe('*.avoid', function(topic, msg) {
+sub.subscribe('*.play', function(topic, msg) {
   console.log("match: ", topic, msg);
 });
 

@@ -10,5 +10,4 @@ var Publisher = require('../lib/messaging-client').Publisher,
 setInterval(function() {
   var pubbed = pub.publish('player.play', {payload: true});
   console.log("SENT", pubbed);
-
 }, 1000);
