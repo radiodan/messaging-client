@@ -1,6 +1,6 @@
 {
   "name": "radiodan-messaging-client",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Companion messaging client for the radiodan broker",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dan Nuttall <pixelblend@gmail.com>",
+  "author": "Dan Nuttall <dan.nuttall@bbc.co.uk>",
   "license": "Apache-2",
   "dependencies": {
     "q": "^1.2.0",
