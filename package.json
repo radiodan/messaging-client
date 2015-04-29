@@ -1,6 +1,6 @@
 {
   "name": "radiodan-messaging-client",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Companion messaging client for the radiodan broker",
   "repository": {
     "type": "git",
